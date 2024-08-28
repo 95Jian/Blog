@@ -6,9 +6,6 @@
 			</div>
 			<div class="ui middle aligned mobile reversed stackable">
 				<div class="ui grid m-margin-lr">
-
-					<!-- <span >{{ item.firstPicture }}</span> -->
-
 					<!--标题-->
 					<div class="row m-padded-tb-small">
 						<h2 class="ui header m-center m-scaleup">
@@ -21,12 +18,6 @@
 							<div class="item m-datetime">
 								<i class="small calendar icon"></i><span>{{ item.createTime | dateFormat('YYYY-MM-DD')}}</span>
 							</div>
-							<!-- <div class="item m-views">
-								<i class="el-icon-s-data"></i><span>{{ item.views }}</span>
-							</div> -->
-							<!-- <div class="item m-common-gray">
-								<i class="el-icon-s-comment"></i><span>123</span>
-							</div> -->
 						</div>
 					</div>
 					<!--分类-->
