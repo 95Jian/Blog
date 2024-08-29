@@ -4,7 +4,7 @@
 		<el-header>
 			<div class="title" @click="$route.path!='/dashboard' && $router.push({path:'/dashboard'})" >
 				<img src="~assets/img/logo.png" alt="" height="40">
-				<span>BLOG · CMS</span>
+				<span>BLOG · CMS · Ver1.0</span>
 			</div>
 			<el-dropdown trigger="click" class="user" v-if="user" @command="logout">
 				<div class="el-dropdown-link">
