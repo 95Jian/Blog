@@ -10,11 +10,6 @@
 						<el-input v-model="form.title" placeholder="请输入标题"></el-input>
 					</el-form-item>
 				</el-col>
-				<!-- <el-col :span="12">
-					<el-form-item label="封面图" prop="firstPicture">
-						<el-input v-model="form.firstPicture" placeholder="可不填，随机获取"></el-input>
-					</el-form-item>
-				</el-col> -->
 			</el-row>
 
 			<!-- <el-alert title="注意：如果从 Typora 中复制 Markdown，粘贴时要选择粘贴为纯文本，
@@ -45,10 +40,6 @@
 				</el-col>
 			</el-row>
 
-			<!-- <el-form-item label="浏览次数" prop="views">
-				<el-input v-model="form.views" placeholder="文章访问量（默认为 0）" type="number" style="width: 50%;"></el-input>
-			</el-form-item> -->
-
 			<el-form-item style="text-align: right;">
 				<el-button type="primary" @click="dialogVisible=true">保存</el-button>
 			</el-form-item>
@@ -65,20 +56,11 @@
 						<!-- <el-radio :label="3">密码保护</el-radio> -->
 					</el-radio-group>
 				</el-form-item>
-				<!-- <el-form-item label="密码" v-if="radio===3">
-					<el-input v-model="form.password"></el-input>
-				</el-form-item> -->
 				<el-form-item v-if="radio!==2">
 					<el-row>
-						<!-- <el-col :span="6">
-							<el-switch v-model="form.appreciation" active-text="赞赏"></el-switch>
-						</el-col> -->
 						<el-col :span="6">
 							<el-switch v-model="form.recommend" active-text="推荐"></el-switch>
 						</el-col>
-						<!-- <el-col :span="6">
-							<el-switch v-model="form.commentEnabled" active-text="评论"></el-switch>
-						</el-col> -->
 						<el-col :span="6">
 							<el-switch v-model="form.top" active-text="置顶"></el-switch>
 						</el-col>
