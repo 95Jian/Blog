@@ -4,7 +4,7 @@
 		<el-header>
 			<div class="title" @click="$route.path!='/dashboard' && $router.push({path:'/dashboard'})" >
 				<img src="~assets/img/logo.png" alt="" height="40">
-				<span>BLOG · CMS · Ver1.0</span>
+				<span>BLOG · CMS · Ver2.0</span>
 			</div>
 			<el-dropdown trigger="click" class="user" v-if="user" @command="logout">
 				<div class="el-dropdown-link">
@@ -94,11 +94,6 @@
 								title: '标签管理',
 								path: '/tags'
 							},
-							// {
-							// 	id: 17,
-							// 	title: '评论管理',
-							// 	path: '/comments'
-							// }
 						]
 					},
 					{
@@ -110,11 +105,6 @@
 								title: '站点设置',
 								path: '/siteSettings'
 							},
-							// {
-							// 	id: 22,
-							// 	title: '友链管理',
-							// 	path: '/friends'
-							// },
 							{
 								id: 23,
 								title: '关于我',
@@ -122,26 +112,10 @@
 							}
 						]
 					},
-					// {
-					// 	id: 3,
-					// 	title: '系统管理',
-					// 	children: [
-					// 		{
-					// 			id: 31,
-					// 			title: '定时任务',
-					// 			path: '/jobs'
-					// 		},
-					// 	]
-					// },
 					{
 						id: 4,
 						title: '日志管理',
 						children: [
-							// {
-							// 	id: 41,
-							// 	title: '任务日志',
-							// 	path: '/jobs/logs'
-							// },
 							{
 								id: 42,
 								title: '登录日志',
@@ -163,23 +137,7 @@
 								path: '/visitLog'
 							}
 						]
-					},
-					// {
-					// 	id: 5,
-					// 	title: '数据统计',
-					// 	children: [
-					// 		{
-					// 			id: 51,
-					// 			title: '访客统计',
-					// 			path: '/visitor'
-					// 		},
-					// 		{
-					// 			id: 52,
-					// 			title: '受访页面',
-					// 			path: '/visitPage'
-					// 		}
-					// 	]
-					// },
+					}
 				],
 				iconsObj: {
 					'1': 'el-icon-menu',
@@ -242,26 +200,6 @@
 		display: none;
 	}
 
-	/* .el-main::-webkit-scrollbar {
-		width: 8px;
-		height: 5px;
-	}
-
-	.el-main::-webkit-scrollbar-thumb {
-		-webkit-box-shadow: inset 0 0 6px #48dbfb;
-		box-shadow: inset 0 0 6px #48dbfb;
-		background-color: #48dbfb;
-	}
-
-	.el-main::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px transparent;
-		box-shadow: inset 0 0 6px transparent;
-		background-color: transparent;
-	}
-
-	.el-main::-webkit-scrollbar-track-piece {
-		background-color: transparent;
-	} */
 
 	@media(min-width:650px) {
 	::-webkit-scrollbar {
