@@ -41,35 +41,6 @@
 				</el-col>
 			</el-row>
 
-			<!-- <el-row style="margin-top: 20px">
-				<el-card>
-					<div slot="header">
-						<span>页脚徽标</span>
-					</div>
-					<el-form :inline="true" v-for="badge in typeMap.type2" :key="badge.id">
-						<el-form-item label="title">
-							<el-input v-model="badge.value.title"></el-input>
-						</el-form-item>
-						<el-form-item label="url">
-							<el-input v-model="badge.value.url"></el-input>
-						</el-form-item>
-						<el-form-item label="subject">
-							<el-input v-model="badge.value.subject"></el-input>
-						</el-form-item>
-						<el-form-item label="value">
-							<el-input v-model="badge.value.value"></el-input>
-						</el-form-item>
-						<el-form-item label="color">
-							<el-input v-model="badge.value.color"></el-input>
-						</el-form-item>
-						<el-form-item>
-							<el-button type="danger" icon="el-icon-delete" @click="deleteBadge(badge)">删除</el-button>
-						</el-form-item>
-					</el-form>
-					<el-button type="primary" size="mini" icon="el-icon-plus" @click="addBadge">添加 badge</el-button>
-				</el-card>
-			</el-row> -->
-
 			<div style="text-align: right;margin-top: 30px">
 				<el-button type="primary" icon="el-icon-check" @click="submit">保存</el-button>
 			</div>

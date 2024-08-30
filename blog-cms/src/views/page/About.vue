@@ -8,19 +8,6 @@
 				<el-input v-model="form.title" placeholder="请输入标题"></el-input>
 			</el-form-item>
 
-			<!-- <el-row :gutter="20" style="width: 50%">
-				<el-col :span="12">
-					<el-form-item label="网易云歌曲ID" prop="musicId">
-						<el-input v-model="form.musicId" type="number" placeholder="请输入网易云歌曲ID（可选）"></el-input>
-					</el-form-item>
-				</el-col>
-				<el-col :span="12">
-					<el-form-item label="评论开关">
-						<el-switch v-model="form.commentEnabled" active-text="评论"></el-switch>
-					</el-form-item>
-				</el-col>
-			</el-row> -->
-
 			<el-form-item label="正文" prop="content">
 				<div id="vditor"></div>
 			</el-form-item>
