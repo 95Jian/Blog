@@ -8,10 +8,6 @@
 				<div id="vditor"></div>
 			</el-form-item>
 
-			<!-- <el-form-item label="点赞数" prop="likes" style="width: 50%">
-				<el-input v-model="form.likes" type="number" placeholder="可选，默认为 0"></el-input>
-			</el-form-item> -->
-
 			<el-form-item label="创建时间" prop="createTime">
 				<el-date-picker v-model="form.createTime" type="datetime" placeholder="可选，默认此刻" :editable="false"></el-date-picker>
 			</el-form-item>
