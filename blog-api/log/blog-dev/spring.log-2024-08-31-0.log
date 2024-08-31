@@ -1,0 +1,497 @@
+2024-08-31 13:25:09.903  INFO 20104 --- [restartedMain] com.rawchen.BlogApiApplication           : Starting BlogApiApplication on DESKTOP-ICGJSF7 with PID 20104 (D:\Blog\Blog\blog-api\target\classes started by 25025 in D:\Blog\Blog\blog-api)
+2024-08-31 13:25:09.907 DEBUG 20104 --- [restartedMain] com.rawchen.BlogApiApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2024-08-31 13:25:09.907  INFO 20104 --- [restartedMain] com.rawchen.BlogApiApplication           : The following profiles are active: dev
+2024-08-31 13:25:10.140  INFO 20104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-31 13:25:10.143  INFO 20104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-31 13:25:11.065  INFO 20104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-08-31 13:25:11.067  INFO 20104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-31 13:25:11.104  INFO 20104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2024-08-31 13:25:12.138  INFO 20104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2024-08-31 13:25:12.145  INFO 20104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-31 13:25:12.145  INFO 20104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2024-08-31 13:25:12.147  INFO 20104 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-08-31 13:25:12.147  INFO 20104 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-08-31 13:25:12.147  INFO 20104 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-08-31 13:25:12.160  INFO 20104 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-08-31 13:25:12.240  INFO 20104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-31 13:25:12.241  INFO 20104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2098 ms
+2024-08-31 13:25:13.158  INFO 20104 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : - Loaded 90 files in  490 msec using expression: classpath*:UserAgents/**/*.yaml
+2024-08-31 13:25:13.158  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : /-----------------------------------------------------------\
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Yauaa 5.20 (v5.20 @ 2020-11-22T15:39:16Z)                 |
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : +-----------------------------------------------------------+
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | For more information: https://yauaa.basjes.nl             |
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Copyright (C) 2013-2020 Niels Basjes - License Apache 2.0 |
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : \-----------------------------------------------------------/
+2024-08-31 13:25:13.159  INFO 20104 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2024-08-31 13:25:13.161  INFO 20104 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Building all needed matchers for the requested 11 fields.
+2024-08-31 13:25:13.644  INFO 20104 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2024-08-31 13:25:13.645  INFO 20104 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2024-08-31 13:25:14.131  INFO 20104 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-08-31 13:25:14.137  INFO 20104 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-08-31 13:25:14.137  INFO 20104 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-08-31 13:25:14.138  INFO 20104 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-08-31 13:25:14.139  INFO 20104 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-08-31 13:25:14.139  INFO 20104 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-08-31 13:25:14.139  INFO 20104 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-08-31 13:25:14.139  INFO 20104 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@39a532d3
+2024-08-31 13:25:14.160  INFO 20104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-31 13:25:14.283  INFO 20104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-31 13:25:14.287 DEBUG 20104 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==>  Preparing: select job_id, bean_name, method_name, params, cron, status, remark, create_time from schedule_job
+2024-08-31 13:25:14.303 DEBUG 20104 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==> Parameters: 
+2024-08-31 13:25:14.340 DEBUG 20104 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : <==      Total: 2
+2024-08-31 13:25:14.561  INFO 20104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-08-31 13:25:14.920  INFO 20104 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23df5994, org.springframework.security.web.context.SecurityContextPersistenceFilter@a16f21b, org.springframework.security.web.header.HeaderWriterFilter@70400c58, org.springframework.web.filter.CorsFilter@c76e59b, org.springframework.security.web.authentication.logout.LogoutFilter@36c8f91e, com.rawchen.config.JwtLoginFilter@19974888, com.rawchen.config.JwtFilter@5cd82fc8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f523073, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4498718c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@592de3e, org.springframework.security.web.session.SessionManagementFilter@2bbe2762, org.springframework.security.web.access.ExceptionTranslationFilter@46b9dd74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b2f83f9]
+2024-08-31 13:25:14.964  INFO 20104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-31 13:25:14.979  INFO 20104 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-08-31 13:25:14.979  INFO 20104 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-08-31 13:25:14.995  INFO 20104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2024-08-31 13:25:14.997  INFO 20104 --- [restartedMain] com.rawchen.BlogApiApplication           : Started BlogApiApplication in 5.65 seconds (JVM running for 6.934)
+2024-08-31 13:31:17.879  INFO 20104 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-31 13:31:17.879  INFO 20104 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-31 13:31:17.884  INFO 20104 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-08-31 13:31:17.971 DEBUG 20104 --- [http-nio-8090-exec-4] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2024-08-31 13:31:17.972 DEBUG 20104 --- [http-nio-8090-exec-4] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2024-08-31 13:31:18.008 DEBUG 20104 --- [http-nio-8090-exec-4] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 1
+2024-08-31 13:31:18.034 ERROR 20104 --- [task-1] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:31:18.036  INFO 20104 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Initializing Analyzer data structures
+2024-08-31 13:31:18.814  INFO 20104 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Built in 777 msec : Hashmap 114881, Ranges map:2900
+2024-08-31 13:31:18.864 DEBUG 20104 --- [task-1] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:31:18.866 DEBUG 20104 --- [task-1] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 81(Integer), 2024-08-31 13:31:18.023(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:31:18.889 DEBUG 20104 --- [task-1] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:31:51.039 ERROR 20104 --- [task-2] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:31:51.040 DEBUG 20104 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:31:51.041 DEBUG 20104 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 11(Integer), 2024-08-31 13:31:51.038(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:31:51.042 DEBUG 20104 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:31:52.305 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2024-08-31 13:31:52.305 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2024-08-31 13:31:52.325 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2024-08-31 13:31:52.327 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2024-08-31 13:31:52.327 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2024-08-31 13:31:52.330 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 5
+2024-08-31 13:31:52.371 ERROR 20104 --- [task-3] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:31:52.372 DEBUG 20104 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:31:52.372 DEBUG 20104 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 87(Integer), 2024-08-31 13:31:52.37(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:31:52.373 DEBUG 20104 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:31:53.043 ERROR 20104 --- [task-4] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:31:53.044 DEBUG 20104 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:31:53.044 DEBUG 20104 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 2(Integer), 2024-08-31 13:31:53.043(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:31:53.045 DEBUG 20104 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:31:54.932 ERROR 20104 --- [task-5] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:31:54.932 DEBUG 20104 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:31:54.933 DEBUG 20104 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 7(Integer), 2024-08-31 13:31:54.93(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:31:54.934 DEBUG 20104 --- [task-5] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:32:00.909 DEBUG 20104 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2024-08-31 13:32:00.910 DEBUG 20104 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2024-08-31 13:32:00.911 DEBUG 20104 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 1
+2024-08-31 13:32:00.915 ERROR 20104 --- [task-6] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.VisitLogServiceImpl.saveVisitLog(VisitLogServiceImpl.java:41)
+	at com.rawchen.service.impl.VisitLogServiceImpl$$FastClassBySpringCGLIB$$4d1affac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:32:00.916 DEBUG 20104 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:32:00.918 DEBUG 20104 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: 95e07b46-e614-34f6-be44-f4d1c929445c(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 8(Integer), 2024-08-31 13:32:00.913(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:32:00.922 DEBUG 20104 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2024-08-31 13:32:04.780 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2024-08-31 13:32:04.780 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.m.S.getWebTitleSuffix                : ==>  Preparing: select value from site_setting where name_en = 'webTitleSuffix'
+2024-08-31 13:32:04.780 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2024-08-31 13:32:04.780 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.m.S.getWebTitleSuffix                : ==> Parameters: 
+2024-08-31 13:32:04.792 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2024-08-31 13:32:04.795 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2024-08-31 13:32:04.795 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2024-08-31 13:32:04.796 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2024-08-31 13:32:04.797 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.m.S.getWebTitleSuffix                : <==      Total: 1
+2024-08-31 13:32:04.797 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2024-08-31 13:32:04.797 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2024-08-31 13:32:04.809 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2024-08-31 13:32:04.809 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2024-08-31 13:32:04.810 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2024-08-31 13:32:04.812 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2024-08-31 13:32:04.813 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2024-08-31 13:32:04.813 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2024-08-31 13:32:04.821 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:04.822 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2024-08-31 13:32:04.822 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2024-08-31 13:32:04.832 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 3
+2024-08-31 13:32:04.833 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2024-08-31 13:32:04.833 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2024-08-31 13:32:04.841 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 7
+2024-08-31 13:32:04.841 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2024-08-31 13:32:04.841 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2024-08-31 13:32:04.850 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 12
+2024-08-31 13:32:04.851 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2024-08-31 13:32:04.851 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2024-08-31 13:32:04.859 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2024-08-31 13:32:08.126 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2024-08-31 13:32:08.127 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2024-08-31 13:32:08.129 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:08.130 DEBUG 20104 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2024-08-31 13:32:08.131 DEBUG 20104 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2024-08-31 13:32:08.135 DEBUG 20104 --- [http-nio-8090-exec-9] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 7
+2024-08-31 13:32:09.870 DEBUG 20104 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : ==>  Preparing: SELECT count(0) FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id
+2024-08-31 13:32:09.870 DEBUG 20104 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : ==> Parameters: 
+2024-08-31 13:32:09.876 DEBUG 20104 --- [http-nio-8090-exec-1] .r.m.B.getListByTitleAndCategoryId_COUNT : <==      Total: 1
+2024-08-31 13:32:09.877 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : ==>  Preparing: SELECT b.id, b.title, b.first_picture, b.create_time, b.update_time, b.is_published, b.is_recommend, b.is_appreciation, b.is_comment_enabled, b.is_top, b.password, c.id AS category_id, c.category_name FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id order by create_time desc LIMIT ?
+2024-08-31 13:32:09.877 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : ==> Parameters: 10(Integer)
+2024-08-31 13:32:09.881 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.B.getListByTitleAndCategoryId      : <==      Total: 5
+2024-08-31 13:32:09.881 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2024-08-31 13:32:09.881 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2024-08-31 13:32:09.882 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:12.668 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2024-08-31 13:32:12.669 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2024-08-31 13:32:12.669 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2024-08-31 13:32:12.670 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2024-08-31 13:32:12.670 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2024-08-31 13:32:12.671 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 5
+2024-08-31 13:32:14.389 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.C.getCategoryList_COUNT            : ==>  Preparing: SELECT count(0) FROM category
+2024-08-31 13:32:14.389 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.C.getCategoryList_COUNT            : ==> Parameters: 
+2024-08-31 13:32:14.390 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.C.getCategoryList_COUNT            : <==      Total: 1
+2024-08-31 13:32:14.390 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: SELECT id, category_name FROM category order by id desc LIMIT ?
+2024-08-31 13:32:14.390 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 10(Integer)
+2024-08-31 13:32:14.391 DEBUG 20104 --- [http-nio-8090-exec-4] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:15.499 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagList_COUNT    : ==>  Preparing: SELECT count(0) FROM tag
+2024-08-31 13:32:15.499 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagList_COUNT    : ==> Parameters: 
+2024-08-31 13:32:15.500 DEBUG 20104 --- [http-nio-8090-exec-7] c.r.mapper.TagMapper.getTagList_COUNT    : <==      Total: 1
+2024-08-31 13:32:15.501 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: SELECT id, tag_name, color FROM tag order by id desc LIMIT ?
+2024-08-31 13:32:15.501 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 10(Integer)
+2024-08-31 13:32:15.501 DEBUG 20104 --- [http-nio-8090-exec-7] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 7
+2024-08-31 13:32:16.173 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.C.getCategoryList_COUNT            : ==>  Preparing: SELECT count(0) FROM category
+2024-08-31 13:32:16.173 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.C.getCategoryList_COUNT            : ==> Parameters: 
+2024-08-31 13:32:16.174 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.C.getCategoryList_COUNT            : <==      Total: 1
+2024-08-31 13:32:16.174 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: SELECT id, category_name FROM category order by id desc LIMIT ?
+2024-08-31 13:32:16.174 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 10(Integer)
+2024-08-31 13:32:16.175 DEBUG 20104 --- [http-nio-8090-exec-8] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:17.307 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2024-08-31 13:32:17.308 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2024-08-31 13:32:17.308 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2024-08-31 13:32:17.308 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2024-08-31 13:32:17.309 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2024-08-31 13:32:17.310 DEBUG 20104 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 5
+2024-08-31 13:32:20.799 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : ==>  Preparing: insert into moment (content, create_time, likes, is_published) values (?, ?, ?, ?)
+2024-08-31 13:32:20.800 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : ==> Parameters: 🎉️ 
+(String), 2024-08-31 13:32:20.798(Timestamp), 0(Integer), true(Boolean)
+2024-08-31 13:32:20.800 DEBUG 20104 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : <==    Updates: 1
+2024-08-31 13:32:20.809 ERROR 20104 --- [task-7] com.rawchen.util.IpAddressUtils          : getCityInfo exception:
+
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.rawchen.util.IpAddressUtils.getCityInfo(IpAddressUtils.java:97)
+	at com.rawchen.service.impl.OperationLogServiceImpl.saveOperationLog(OperationLogServiceImpl.java:35)
+	at com.rawchen.service.impl.OperationLogServiceImpl$$FastClassBySpringCGLIB$$22d12ec8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1610329044
+	at org.lionsoul.ip2region.Util.getIntLong(Util.java:48)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:105)
+	at org.lionsoul.ip2region.DbSearcher.memorySearch(DbSearcher.java:140)
+	... 20 common frames omitted
+
+2024-08-31 13:32:20.810 DEBUG 20104 --- [task-7] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-31 13:32:20.811 DEBUG 20104 --- [task-7] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/moment(String), POST(String), {"moment":{"id":11,"content":"🎉️ \n","createTime":1725082340798,"likes":0,"published":true}}(String), 发布动态(String), 10.22.229.198(String), null, Windows 10(String), Edge 128.0.0.0(String), 6(Integer), 2024-08-31 13:32:20.805(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0(String)
+2024-08-31 13:32:20.848 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2024-08-31 13:32:20.849 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2024-08-31 13:32:20.849 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2024-08-31 13:32:20.850 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2024-08-31 13:32:20.850 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2024-08-31 13:32:20.852 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 6
+2024-08-31 13:32:20.876 ERROR 20104 --- [task-7] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void com.rawchen.service.impl.OperationLogServiceImpl.saveOperationLog(com.rawchen.entity.OperationLog)
+
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x8E\x89\xEF\xB8...' for column 'param' at row 1
+### The error may exist in file [D:\Blog\Blog\blog-api\target\classes\mapper\OperationLogMapper.xml]
+### The error may involve com.rawchen.mapper.OperationLogMapper.saveOperationLog-Inline
+### The error occurred while setting parameters
+### SQL: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times,            create_time, user_agent)   values (?, ?, ?, ?, ?, ?, ?, ?, ?,     ?, ?, ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x8E\x89\xEF\xB8...' for column 'param' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xF0\x9F\x8E\x89\xEF\xB8...' for column 'param' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xF0\x9F\x8E\x89\xEF\xB8...' for column 'param' at row 1
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy89.saveOperationLog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy90.saveOperationLog(Unknown Source)
+	at com.rawchen.service.impl.OperationLogServiceImpl.saveOperationLog(OperationLogServiceImpl.java:42)
+	at com.rawchen.service.impl.OperationLogServiceImpl$$FastClassBySpringCGLIB$$22d12ec8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x8E\x89\xEF\xB8...' for column 'param' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy144.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy162.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 32 common frames omitted
+
+2024-08-31 13:32:23.415 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.C.getCategoryList_COUNT            : ==>  Preparing: SELECT count(0) FROM category
+2024-08-31 13:32:23.415 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.C.getCategoryList_COUNT            : ==> Parameters: 
+2024-08-31 13:32:23.416 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.C.getCategoryList_COUNT            : <==      Total: 1
+2024-08-31 13:32:23.416 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: SELECT id, category_name FROM category order by id desc LIMIT ?
+2024-08-31 13:32:23.416 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 10(Integer)
+2024-08-31 13:32:23.417 DEBUG 20104 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 4
+2024-08-31 13:32:24.276 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagList_COUNT    : ==>  Preparing: SELECT count(0) FROM tag
+2024-08-31 13:32:24.277 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagList_COUNT    : ==> Parameters: 
+2024-08-31 13:32:24.278 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagList_COUNT    : <==      Total: 1
+2024-08-31 13:32:24.280 DEBUG 20104 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: SELECT id, tag_name, color FROM tag order by id desc LIMIT ?
+2024-08-31 13:32:24.280 DEBUG 20104 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 10(Integer)
+2024-08-31 13:32:24.281 DEBUG 20104 --- [http-nio-8090-exec-5] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 7
+2024-08-31 13:32:27.777 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.mapper.SiteSettingMapper.getList     : ==>  Preparing: select * from site_setting
+2024-08-31 13:32:27.777 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.mapper.SiteSettingMapper.getList     : ==> Parameters: 
+2024-08-31 13:32:27.782 DEBUG 20104 --- [http-nio-8090-exec-6] c.r.mapper.SiteSettingMapper.getList     : <==      Total: 7
+2024-08-31 13:32:29.801 DEBUG 20104 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : ==>  Preparing: select * from about
+2024-08-31 13:32:29.801 DEBUG 20104 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : ==> Parameters: 
+2024-08-31 13:32:29.821 DEBUG 20104 --- [http-nio-8090-exec-8] com.rawchen.mapper.AboutMapper.getList   : <==      Total: 4
+2024-08-31 13:32:34.562 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : ==>  Preparing: SELECT count(0) FROM login_log
+2024-08-31 13:32:34.562 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : ==> Parameters: 
+2024-08-31 13:32:34.571 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate_COUNT      : <==      Total: 1
+2024-08-31 13:32:34.571 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : ==>  Preparing: SELECT id, username, ip, ip_source, os, browser, status, description, create_time FROM login_log order by create_time desc LIMIT ?
+2024-08-31 13:32:34.571 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : ==> Parameters: 10(Integer)
+2024-08-31 13:32:34.572 DEBUG 20104 --- [http-nio-8090-exec-10] c.r.m.L.getLoginLogListByDate            : <==      Total: 2
+2024-08-31 13:32:35.428 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate_COUNT  : ==>  Preparing: SELECT count(0) FROM operation_log
+2024-08-31 13:32:35.428 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate_COUNT  : ==> Parameters: 
+2024-08-31 13:32:35.436 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate_COUNT  : <==      Total: 1
+2024-08-31 13:32:35.437 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate        : ==>  Preparing: SELECT id, username, uri, method, param, description, ip, ip_source, os, browser, times, create_time FROM operation_log order by create_time desc LIMIT ?
+2024-08-31 13:32:35.437 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate        : ==> Parameters: 10(Integer)
+2024-08-31 13:32:35.441 DEBUG 20104 --- [http-nio-8090-exec-2] c.r.m.O.getOperationLogListByDate        : <==      Total: 10
+2024-08-31 13:32:36.320 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate_COUNT  : ==>  Preparing: SELECT count(0) FROM exception_log
+2024-08-31 13:32:36.320 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate_COUNT  : ==> Parameters: 
+2024-08-31 13:32:36.329 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate_COUNT  : <==      Total: 1
+2024-08-31 13:32:36.329 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate        : ==>  Preparing: SELECT id, uri, method, param, description, error, ip, ip_source, os, browser, create_time FROM exception_log order by create_time desc LIMIT ?
+2024-08-31 13:32:36.329 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate        : ==> Parameters: 10(Integer)
+2024-08-31 13:32:36.333 DEBUG 20104 --- [http-nio-8090-exec-5] c.r.m.E.getExceptionLogListByDate        : <==      Total: 9

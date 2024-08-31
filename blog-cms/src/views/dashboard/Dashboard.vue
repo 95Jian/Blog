@@ -35,8 +35,6 @@
 	import echarts from 'echarts'
 	import 'echarts/map/js/china'
 	import {getDashboard} from "@/api/dashboard";
-	//城市经纬度数据来自 https://github.com/Naccl/region2coord
-	import geoCoordMap from '@/common/city2coord.json'
 
 	export default {
 		name: "Dashboard",
@@ -129,20 +127,6 @@
 				this.tagEcharts = echarts.init(this.$refs.tagEcharts, 'light')
 				this.tagEcharts.setOption(this.tagOption)
 			},
-			convertData(data) {
-				let res = []
-				for (let i = 0; i < data.length; i++) {
-					let geoCoord = geoCoordMap[data[i].city]
-					if (geoCoord) {
-						res.push({
-							name: data[i].city,
-							value: geoCoord,
-							uv: data[i].uv
-						})
-					}
-				}
-				return res
-			}
 		}
 	}
 </script>

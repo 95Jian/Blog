@@ -131,11 +131,6 @@
 								title: '异常日志',
 								path: '/exceptionLog'
 							},
-							{
-								id: 45,
-								title: '访问日志',
-								path: '/visitLog'
-							}
 						]
 					}
 				],
