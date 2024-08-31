@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rawchen.mapper.BlogMapper">
+<mapper namespace="com.jian.mapper.BlogMapper">
 
-	<resultMap id="blog" type="com.rawchen.entity.Blog">
+	<resultMap id="blog" type="com.jian.entity.Blog">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="firstPicture" column="first_picture"/>
@@ -17,7 +17,7 @@
 		<result property="updateTime" column="update_time"/>
 		<result property="views" column="views"/>
 		<result property="password" column="password"/>
-		<association property="user" javaType="com.rawchen.entity.User">
+		<association property="user" javaType="com.jian.entity.User">
 			<id property="id" column="user_id"/>
 			<result property="username" column="username"/>
 			<result property="nickname" column="nickname"/>
@@ -27,11 +27,11 @@
 			<result property="updateTime" column="user_update_time"/>
 			<result property="role" column="role"/>
 		</association>
-		<association property="category" javaType="com.rawchen.entity.Category">
+		<association property="category" javaType="com.jian.entity.Category">
 			<id property="id" column="category_id"/>
 			<result property="name" column="category_name"/>
 		</association>
-		<collection property="tags" javaType="com.rawchen.entity.Tag">
+		<collection property="tags" javaType="com.jian.entity.Tag">
 			<id property="id" column="tag_id"/>
 			<result property="name" column="tag_name"/>
 			<result property="color" column="color"/>
@@ -56,7 +56,7 @@
 		</where>
 	</select>
 
-	<resultMap id="searchBlog" type="com.rawchen.model.vo.SearchBlog">
+	<resultMap id="searchBlog" type="com.jian.model.vo.SearchBlog">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="content" column="content"/>
@@ -70,7 +70,7 @@
 		where is_published=true and password='' and content like #{queryPattern}
 	</select>
 
-	<resultMap id="blogIdAndTitle" type="com.rawchen.model.vo.BlogIdAndTitle">
+	<resultMap id="blogIdAndTitle" type="com.jian.model.vo.BlogIdAndTitle">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 	</resultMap>
@@ -82,7 +82,7 @@
 		order by create_time desc
 	</select>
 
-	<resultMap id="newBlog" type="com.rawchen.model.vo.NewBlog">
+	<resultMap id="newBlog" type="com.jian.model.vo.NewBlog">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="password" column="password"/>
@@ -96,7 +96,7 @@
 		order by create_time desc
 	</select>
 
-	<resultMap id="blogInfo" type="com.rawchen.model.vo.BlogInfo">
+	<resultMap id="blogInfo" type="com.jian.model.vo.BlogInfo">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="description" column="description"/>
@@ -105,7 +105,7 @@
 		<result property="top" column="is_top"/>
 		<result property="password" column="password"/>
 		<result property="firstPicture" column="first_picture"/>
-		<association property="category" javaType="com.rawchen.entity.Category">
+		<association property="category" javaType="com.jian.entity.Category">
 			<result property="name" column="category_name"/>
 			<result property="id" column="category_id"/>
 		</association>
@@ -169,7 +169,7 @@
 		order by date_format(create_time, "%Y年%m月") desc
 	</select>
 
-	<resultMap id="archiveBlog" type="com.rawchen.model.vo.ArchiveBlog">
+	<resultMap id="archiveBlog" type="com.jian.model.vo.ArchiveBlog">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="day" column="create_day"/>
@@ -185,7 +185,7 @@
 		order by create_time desc
 	</select>
 
-	<resultMap id="randomBlog" type="com.rawchen.model.vo.RandomBlog">
+	<resultMap id="randomBlog" type="com.jian.model.vo.RandomBlog">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="password" column="password"/>
@@ -204,7 +204,7 @@
 	</select>
 
 	<!--查询所有文章的浏览量-->
-	<select id="getBlogViewsList" resultType="com.rawchen.model.dto.BlogView">
+	<select id="getBlogViewsList" resultType="com.jian.model.dto.BlogView">
 		select id, views
 		from blog
 	</select>
@@ -230,7 +230,7 @@
 	</insert>
 
 	<!--添加博客-->
-	<insert id="saveBlog" parameterType="com.rawchen.model.dto.Blog" useGeneratedKeys="true" keyProperty="id">
+	<insert id="saveBlog" parameterType="com.jian.model.dto.Blog" useGeneratedKeys="true" keyProperty="id">
 		insert into blog (title, first_picture, content, description, is_published, is_recommend, is_appreciation,
 						  is_comment_enabled,
 						  is_top, create_time, update_time, views, category_id, user_id, password)
@@ -306,7 +306,7 @@
 		where id = #{id}
 	</select>
 
-	<resultMap id="blogDetail" type="com.rawchen.model.vo.BlogDetail">
+	<resultMap id="blogDetail" type="com.jian.model.vo.BlogDetail">
 		<id property="id" column="id"/>
 		<result property="title" column="title"/>
 		<result property="content" column="content"/>
@@ -317,10 +317,10 @@
 		<result property="updateTime" column="update_time"/>
 		<result property="views" column="views"/>
 		<result property="password" column="password"/>
-		<association property="category" javaType="com.rawchen.entity.Category">
+		<association property="category" javaType="com.jian.entity.Category">
 			<result property="name" column="category_name"/>
 		</association>
-		<collection property="tags" javaType="com.rawchen.entity.Tag">
+		<collection property="tags" javaType="com.jian.entity.Tag">
 			<result property="name" column="tag_name"/>
 			<result property="color" column="color"/>
 		</collection>
@@ -415,7 +415,7 @@
 		where id = #{blogId}
 	</select>
 
-	<resultMap id="categoryBlogCount" type="com.rawchen.model.vo.CategoryBlogCount">
+	<resultMap id="categoryBlogCount" type="com.jian.model.vo.CategoryBlogCount">
 		<id property="id" column="category_id"/>
 		<result property="value" column="blog_count"/>
 	</resultMap>

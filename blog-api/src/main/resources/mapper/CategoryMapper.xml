@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rawchen.mapper.CategoryMapper">
+<mapper namespace="com.jian.mapper.CategoryMapper">
 
-	<resultMap id="category" type="com.rawchen.entity.Category">
+	<resultMap id="category" type="com.jian.entity.Category">
 		<id property="id" column="id"/>
 		<result property="name" column="category_name"/>
 	</resultMap>
@@ -22,7 +22,7 @@
 	</select>
 
 	<!--添加分类-->
-	<insert id="saveCategory" parameterType="com.rawchen.entity.Category" useGeneratedKeys="true" keyProperty="id">
+	<insert id="saveCategory" parameterType="com.jian.entity.Category" useGeneratedKeys="true" keyProperty="id">
 		insert into category (category_name)
 		values (#{name})
 	</insert>
