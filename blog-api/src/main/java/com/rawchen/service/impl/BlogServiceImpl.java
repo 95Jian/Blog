@@ -249,9 +249,10 @@ public class BlogServiceImpl implements BlogService {
 	@Transactional
 	@Override
 	public void deleteBlogTagByBlogId(Long blogId) {
-		if (blogMapper.deleteBlogTagByBlogId(blogId) == 0) {
-			throw new PersistenceException("维护博客标签关联表失败");
-		}
+//		if (blogMapper.deleteBlogTagByBlogId(blogId) == 0) {
+//			throw new PersistenceException("维护博客标签关联表失败");
+//		}
+		blogMapper.deleteBlogTagByBlogId(blogId);
 	}
 
 	@Transactional

@@ -1,7 +1,7 @@
 package com.rawchen.controller.admin;
 
 import com.rawchen.config.RedisKeyConfig;
-import com.rawchen.entity.CityVisitor;
+//import com.rawchen.entity.CityVisitor;
 import com.rawchen.model.vo.Result;
 import com.rawchen.service.DashboardService;
 import com.rawchen.service.RedisService;
@@ -28,24 +28,24 @@ public class DashboardAdminController {
 
 	@GetMapping("/dashboard")
 	public Result dashboard() {
-		int todayPV = dashboardService.countVisitLogByToday();
-		int todayUV = redisService.countBySet(RedisKeyConfig.IDENTIFICATION_SET);
+//		int todayPV = dashboardService.countVisitLogByToday();
+//		int todayUV = redisService.countBySet(RedisKeyConfig.IDENTIFICATION_SET);
 		int blogCount = dashboardService.getBlogCount();
-		int commentCount = dashboardService.getCommentCount();
+//		int commentCount = dashboardService.getCommentCount();
 		Map<String, List> categoryBlogCountMap = dashboardService.getCategoryBlogCountMap();
 		Map<String, List> tagBlogCountMap = dashboardService.getTagBlogCountMap();
-		Map<String, List> visitRecordMap = dashboardService.getVisitRecordMap();
-		List<CityVisitor> cityVisitorList = dashboardService.getCityVisitorList();
+//		Map<String, List> visitRecordMap = dashboardService.getVisitRecordMap();
+//		List<CityVisitor> cityVisitorList = dashboardService.getCityVisitorList();
 
 		Map<String, Object> map = new HashMap<>();
-		map.put("pv", todayPV);
-		map.put("uv", todayUV);
+//		map.put("pv", todayPV);
+//		map.put("uv", todayUV);
 		map.put("blogCount", blogCount);
-		map.put("commentCount", commentCount);
+//		map.put("commentCount", commentCount);
 		map.put("category", categoryBlogCountMap);
 		map.put("tag", tagBlogCountMap);
-		map.put("visitRecord", visitRecordMap);
-		map.put("cityVisitor", cityVisitorList);
+//		map.put("visitRecord", visitRecordMap);
+//		map.put("cityVisitor", cityVisitorList);
 		return Result.ok("获取成功", map);
 	}
 }

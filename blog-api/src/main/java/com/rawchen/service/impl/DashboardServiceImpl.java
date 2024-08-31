@@ -1,9 +1,9 @@
 package com.rawchen.service.impl;
 
 import com.rawchen.entity.Category;
-import com.rawchen.entity.CityVisitor;
+//import com.rawchen.entity.CityVisitor;
 import com.rawchen.entity.Tag;
-import com.rawchen.entity.VisitRecord;
+//import com.rawchen.entity.VisitRecord;
 import com.rawchen.model.vo.CategoryBlogCount;
 import com.rawchen.model.vo.TagBlogCount;
 import com.rawchen.service.DashboardService;
@@ -11,11 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.rawchen.mapper.BlogMapper;
 import com.rawchen.mapper.CategoryMapper;
-import com.rawchen.mapper.CityVisitorMapper;
-import com.rawchen.mapper.CommentMapper;
+//import com.rawchen.mapper.CityVisitorMapper;
+//import com.rawchen.mapper.CommentMapper;
 import com.rawchen.mapper.TagMapper;
-import com.rawchen.mapper.VisitLogMapper;
-import com.rawchen.mapper.VisitRecordMapper;
+//import com.rawchen.mapper.VisitLogMapper;
+//import com.rawchen.mapper.VisitRecordMapper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,35 +30,35 @@ import java.util.Map;
 public class DashboardServiceImpl implements DashboardService {
 	@Autowired
 	BlogMapper blogMapper;
-	@Autowired
-	CommentMapper commentMapper;
+//	@Autowired
+//	CommentMapper commentMapper;
 	@Autowired
 	CategoryMapper categoryMapper;
 	@Autowired
 	TagMapper tagMapper;
-	@Autowired
-	VisitLogMapper visitLogMapper;
-	@Autowired
-	VisitRecordMapper visitRecordMapper;
-	@Autowired
-	CityVisitorMapper cityVisitorMapper;
+//	@Autowired
+//	VisitLogMapper visitLogMapper;
+//	@Autowired
+//	VisitRecordMapper visitRecordMapper;
+//	@Autowired
+//	CityVisitorMapper cityVisitorMapper;
 	//查询最近30天的记录
 	private static final int visitRecordLimitNum = 30;
 
-	@Override
-	public int countVisitLogByToday() {
-		return visitLogMapper.countVisitLogByToday();
-	}
+//	@Override
+//	public int countVisitLogByToday() {
+//		return visitLogMapper.countVisitLogByToday();
+//	}
 
 	@Override
 	public int getBlogCount() {
 		return blogMapper.countBlog();
 	}
 
-	@Override
-	public int getCommentCount() {
-		return commentMapper.countComment();
-	}
+//	@Override
+//	public int getCommentCount() {
+//		return commentMapper.countComment();
+//	}
 
 	@Override
 	public Map<String, List> getCategoryBlogCountMap() {
@@ -150,27 +150,27 @@ public class DashboardServiceImpl implements DashboardService {
 		return map;
 	}
 
-	@Override
-	public Map<String, List> getVisitRecordMap() {
-		List<VisitRecord> visitRecordList = visitRecordMapper.getVisitRecordListByLimit(visitRecordLimitNum);
-		List<String> date = new ArrayList<>(visitRecordList.size());
-		List<Integer> pv = new ArrayList<>(visitRecordList.size());
-		List<Integer> uv = new ArrayList<>(visitRecordList.size());
-		for (int i = visitRecordList.size() - 1; i >= 0; i--) {
-			VisitRecord visitRecord = visitRecordList.get(i);
-			date.add(visitRecord.getDate());
-			pv.add(visitRecord.getPv());
-			uv.add(visitRecord.getUv());
-		}
-		Map<String, List> map = new HashMap<>();
-		map.put("date", date);
-		map.put("pv", pv);
-		map.put("uv", uv);
-		return map;
-	}
-
-	@Override
-	public List<CityVisitor> getCityVisitorList() {
-		return cityVisitorMapper.getCityVisitorList();
-	}
+//	@Override
+//	public Map<String, List> getVisitRecordMap() {
+//		List<VisitRecord> visitRecordList = visitRecordMapper.getVisitRecordListByLimit(visitRecordLimitNum);
+//		List<String> date = new ArrayList<>(visitRecordList.size());
+//		List<Integer> pv = new ArrayList<>(visitRecordList.size());
+//		List<Integer> uv = new ArrayList<>(visitRecordList.size());
+//		for (int i = visitRecordList.size() - 1; i >= 0; i--) {
+//			VisitRecord visitRecord = visitRecordList.get(i);
+//			date.add(visitRecord.getDate());
+//			pv.add(visitRecord.getPv());
+//			uv.add(visitRecord.getUv());
+//		}
+//		Map<String, List> map = new HashMap<>();
+//		map.put("date", date);
+//		map.put("pv", pv);
+//		map.put("uv", uv);
+//		return map;
+//	}
+//
+//	@Override
+//	public List<CityVisitor> getCityVisitorList() {
+//		return cityVisitorMapper.getCityVisitorList();
+//	}
 }

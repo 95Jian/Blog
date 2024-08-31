@@ -11,7 +11,7 @@ import com.rawchen.model.dto.BlogVisibility;
 import com.rawchen.model.vo.Result;
 import com.rawchen.service.BlogService;
 import com.rawchen.service.CategoryService;
-import com.rawchen.service.CommentService;
+//import com.rawchen.service.CommentService;
 import com.rawchen.service.TagService;
 import com.rawchen.util.PictureUtil;
 import com.rawchen.util.StringUtils;
@@ -45,8 +45,8 @@ public class BlogAdminController {
 	CategoryService categoryService;
 	@Autowired
 	TagService tagService;
-	@Autowired
-	CommentService commentService;
+//	@Autowired
+//	CommentService commentService;
 
 	/**
 	 * 获取博客文章列表
@@ -83,7 +83,7 @@ public class BlogAdminController {
 	public Result delete(@RequestParam Long id) {
 		blogService.deleteBlogTagByBlogId(id);
 		blogService.deleteBlogById(id);
-		commentService.deleteCommentsByBlogId(id);
+//		commentService.deleteCommentsByBlogId(id);
 		return Result.ok("删除成功");
 	}
 

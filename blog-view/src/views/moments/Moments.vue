@@ -15,11 +15,7 @@
 							<span class="right floated">{{ moment.createTime | dateFromNow }}</span>
 						</div>
 						<div class="content typo" :class="{'privacy':!moment.published}" v-viewer v-html="moment.content"></div>
-						<div class="extra content">
-							<a class="left floated" @click="like(moment.id)">
-								<i class="heart icon" :class="isLike(moment.id)?'like-color':'outline'"></i>{{ moment.likes }}
-							</a>
-						</div>
+
 					</div>
 				</div>
 			</div>

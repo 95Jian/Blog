@@ -205,9 +205,6 @@
 				})
 			},
 			submit() {
-				// if (this.radio === 3 && (this.form.password === '' || this.form.password === null)) {
-				// 	return this.msgError("密码保护模式必须填写密码！")
-				// }
 				this.$refs.formRef.validate(valid => {
 					if (valid) {
 						this.form.description = this.descriptionVditor.getValue()

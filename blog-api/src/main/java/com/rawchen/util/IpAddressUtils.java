@@ -68,7 +68,7 @@ public class IpAddressUtils {
 	 * 解决打包jar后找不到 ip2region.db 的问题
 	 */
 	@PostConstruct
-	private void initIp2regionResource() {
+	private static void initIp2regionResource() {
 		try {
 			InputStream inputStream = new ClassPathResource("/ipdb/ip2region.db").getInputStream();
 			//将 ip2region.db 转为 ByteArray
@@ -101,6 +101,11 @@ public class IpAddressUtils {
 				ipInfo = ipInfo.replace("0|", "");
 			}
 			return ipInfo;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			log.error("ArrayIndexOutOfBoundsException in getCityInfo. Possible corrupt db file.", e);
+			// Optional: attempt to reinitialize the database
+			initIp2regionResource();
+			return "Unknown Location";
 		} catch (Exception e) {
 			log.error("getCityInfo exception:", e);
 		}
